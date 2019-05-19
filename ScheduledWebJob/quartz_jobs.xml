@@ -21,7 +21,7 @@
       <cron>
         <name>SampleJobTrigger</name>
         <job-name>ExampleJobDefinition</job-name>
-        <!-- Run every day at 1 AM, see https://www.freeformatter.com/cron-expression-generator-quartz.html to generate different schedules-->
+        <!-- Run every 5 seconds, see https://www.freeformatter.com/cron-expression-generator-quartz.html to generate different schedules-->
         <cron-expression>0/5 * * ? * * *</cron-expression>
       </cron>
     </trigger>
