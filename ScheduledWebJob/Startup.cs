@@ -32,6 +32,7 @@ namespace ScheduledWebJob
         {
             services.AddOptions();
 
+            // IMPORTANT: Do not forget to register the job itself so it can be later resolved by the JobFactory
             services.AddTransient<SampleJob>();
             services.AddTransient<IJobFactory, JobFactory>();
             services.AddSingleton(provider =>
